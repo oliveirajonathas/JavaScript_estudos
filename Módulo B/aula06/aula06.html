@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de dados</title>
+    <link rel="stylesheet" href="../../estilos/style.css">
+</head>
+<body>
+    <div>
+        <h1>Guardando valor via prompt em variável</h1>        
+        <script>
+           var n1 = Number.parseFloat(window.prompt('Nota 1'));
+           var n2 = Number.parseFloat(window.prompt('Nota 2'));
+           var media = (n1 + n2)/2;
+           var s = n1 + n2;
+           window.alert(`A soma entre ${n1} e ${n2} é ${s} e a média é ${media}`);
+        </script>        
+    </div>
+</body>
+</html>

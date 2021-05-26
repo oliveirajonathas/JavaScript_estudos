@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMIGRAÇÃO</title>
+</head>
+<body>
+    <h1>Controle de Nacionalidade</h1>
+    País de Origem: <input type="text" name="txtnac" id="txtnac">
+    <input type="button" value="VERIFICAR" id="botao">
+    <div id="res"></div>
+    <Script>
+
+        var botao = window.document.querySelector('input#botao')
+        var res = window.document.querySelector('div#res')
+        botao.addEventListener('click', verificar)
+
+        function verificar(){
+            var nac = window.document.querySelector('input#txtnac')                    
+
+            res.innerHTML = `<p>Por nascer em ${nac.value}</p>`
+            
+            if(nac.value == "Brasil"){
+                res.innerHTML += `<p>Você é brasileiro!</p>`
+            }else{
+                res.innerHTML += `<p>Você é estrangeiro!</p>`
+            }    
+        }
+        
+    </Script>
+</body>
+</html>
